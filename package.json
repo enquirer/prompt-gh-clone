@@ -1,0 +1,56 @@
+{
+  "name": "prompt-gh-clone",
+  "description": "Prompt for the owner/name of a GitHub repository to clone.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/enquirer/prompt-gh-clone",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "enquirer/prompt-gh-clone",
+  "bugs": {
+    "url": "https://github.com/enquirer/prompt-gh-clone/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gh-clone": "^0.5.0",
+    "prompt-text": "^1.0.5"
+  },
+  "devDependencies": {
+    "delete": "^1.0.1",
+    "gulp-format-md": "^0.1.12",
+    "mocha": "^3.4.2"
+  },
+  "keywords": [
+    "ask",
+    "clone",
+    "download",
+    "enquirer",
+    "gh",
+    "github",
+    "prompt",
+    "question",
+    "repository",
+    "terminal"
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
