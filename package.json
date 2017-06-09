@@ -1,7 +1,7 @@
 {
   "name": "prompt-gh-clone",
   "description": "Prompt for the owner/name of a GitHub repository to clone.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/enquirer/prompt-gh-clone",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "enquirer/prompt-gh-clone",
@@ -42,13 +42,20 @@
   ],
   "verb": {
     "toc": false,
-    "layout": "default",
+    "layout": "common-minimal",
     "tasks": [
       "readme"
     ],
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "prompt-checklist",
+        "prompt-confirm",
+        "prompt-radio"
+      ]
+    },
     "lint": {
       "reflinks": true
     }
