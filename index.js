@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require('path');
-var Text = require('prompt-text');
+var Input = require('prompt-input');
 var clone = require('gh-clone');
 
 module.exports = function(options, cb) {
@@ -20,7 +20,7 @@ module.exports = function(options, cb) {
     message: 'GitHub repo to clone? (owner/name)'
   }, opts);
 
-  var prompt = new Text(question);
+  var prompt = new Input(question);
 
   setImmediate(function() {
     prompt.ask(function(repo) {
@@ -29,7 +29,7 @@ module.exports = function(options, cb) {
         return;
       }
 
-      new Text({
+      new Input({
         name: 'dest',
         message: 'Destination directory?',
         default: opts.dest || path.basename(repo)
